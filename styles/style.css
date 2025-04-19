@@ -251,11 +251,7 @@
   padding-top: 111px;
   display: flex;
   flex-direction: column;
-  gap: 23px;
-}
-
-.about__text-second {
-  margin-top: 1px;
+  gap: 24px;
 }
 
 .footer {
