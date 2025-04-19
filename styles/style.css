@@ -1,27 +1,29 @@
 /* место для вашего кода */
 .header {
-  min-height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 0 50px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
   list-style-type: circle;
   display: flex;
-  gap: 32px;
-  height: 26px;
+  gap: 33px;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
 }
 
 .header__links-list-item {
   text-underline-offset: 4px;
+}
+
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__links-list-item_no-bullit .header__links-list-item {
+.link-active {
   text-decoration: none;
 }
 
@@ -37,7 +39,6 @@
   text-underline-offset: 4px;
   justify-self: end;
   max-width: 240px;
-  max-height: 100px;
   line-height: 24px;
   font-style: normal;
   font-weight: 400;
@@ -76,7 +77,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 17px;
   z-index: 2;
 }
 
@@ -88,17 +89,17 @@
 
 .text-center {
   align-self: center;
-  margin-right: -0.3em;
-  margin-top: -5px;
+  margin-left: 0.3em;
+  margin-bottom: 10px;
 }
 
 .text-right {
   align-self: end;
-  margin-right: -0.3em;
+  line-height: 100px;
 }
 
-.text__righ-last {
-  letter-spacing: 0px;
+.text-right-last {
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -129,7 +130,6 @@
 }
 
 .lots {
-  min-height: 723px;
   padding: 180px 24px 120px 24px;
 }
 
@@ -151,7 +151,7 @@
 
 .lots__card-list-item {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -236,7 +236,6 @@
 
 .about__column-text {
   padding-top: 148px;
-  min-height: 449px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -255,11 +254,14 @@
   gap: 23px;
 }
 
+.about__text-second {
+  margin-top: 1px;
+}
+
 .footer {
-  min-height: 180px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 50px;
+  padding: 0 50px 83px;
 }
 
 .address-footer {
